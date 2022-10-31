@@ -4,11 +4,14 @@ from threading import Thread
 ## 생성자
 Thread(target="Target function want to call", name="Thread name", args=("Parameter","Want","To Use"))
 
-## daemon 설정 (Background thread)
+## Daemon 설정 (Background thread)
 Thread.daemon=True
 
 ## Thread start
 Thread.start()
+
+## Thread alive check
+Thread.is_alive()
 
 ## Wait for Thread end
 Thread.join()
